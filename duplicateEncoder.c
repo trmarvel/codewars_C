@@ -16,10 +16,9 @@ char *DuplicateEncoder(char *s) {
 		i++;
   	}
 
-
 	for (i = 0; i < len; i++) { 
 		for (int j = 0; j < len; j++) {
-        	if (j == i) {
+			if (j == i) {
 				continue;
         	}
       		if (tolower(s[i]) == tolower(s[j])) {
@@ -35,6 +34,6 @@ char *DuplicateEncoder(char *s) {
     	else {
         	duplicate[i] = '(';
     	}
-  	}
+	}
 	return duplicate;
 }
