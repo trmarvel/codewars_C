@@ -34,6 +34,6 @@ char *DuplicateEncoder(char *s) {
     	else {
         	duplicate[i] = '(';
     	}
-	}
-	return duplicate;
+    }
+    return duplicate;
 }
