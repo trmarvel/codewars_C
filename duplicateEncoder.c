@@ -13,19 +13,19 @@ char *DuplicateEncoder(char *s) {
   
 	while (i <= len) {
 		duplicate[i] = '\0';
-    	i++;
+		i++;
   	}
 
 
 	for (i = 0; i < len; i++) { 
-    	for (int j = 0; j < len; j++) {
+		for (int j = 0; j < len; j++) {
         	if (j == i) {
-            	continue;
+				continue;
         	}
       		if (tolower(s[i]) == tolower(s[j])) {
-        	duplicate[i] = ')';
-        	isDuplicate = true;
-        	break;
+        		duplicate[i] = ')';
+        		isDuplicate = true;
+        		break;
       		} 
     	}
     	if (isDuplicate) {
